@@ -1,0 +1,594 @@
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 5% 95%;
+        grid-template-columns: 5% 95%;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    grid-column-end: 3;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subheader {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    grid-column-end: 3;
+  }
+}
+
+.side_menu {
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+@media screen and (min-width: 768px) {
+  .side_menu {
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 5;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .submenu {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tasks {
+    -ms-grid-row: 4;
+    grid-row: 4;
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+}
+
+.wrapper2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-row-gap: 5px;
+    grid-column-gap: 16px;
+  }
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container_task_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 1050px) {
+  .container_task_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .container2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.flex_center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.select {
+  position: relative;
+  min-width: 100%;
+  margin: 8px 0;
+}
+
+@media screen and (min-width: 1050px) {
+  .select {
+    position: relative;
+    min-width: 21.5%;
+    margin: 8px 8px 8px 0;
+  }
+}
+
+.label {
+  color: #979797;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  margin: 2px;
+  line-height: 14px;
+}
+
+.select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  padding: 4px 8px;
+  width: 100%;
+  height: 32px;
+  color: #272727;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  background: #FFFFFF;
+  border: 1px solid #D5D5D5;
+  border-radius: 3px;
+  margin: 0;
+  background-image: url(../images/icons/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center right 8px;
+  background-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .select select {
+    padding: 4px 18px;
+    width: 100%;
+    height: 32px;
+  }
+}
+
+.search {
+  background-color: #E4E4E4;
+  margin: 2%;
+  padding: 2%;
+  border: 1px solid #D5D5D5;
+}
+
+.tasks {
+  margin: 1.4% 4.6% 1.4% 2%;
+  padding: 0;
+  background-color: #ffff;
+  border: 1px solid #D5D5D5;
+  border-collapse: collapse;
+}
+
+.tasks_list_heading {
+  border: 1px solid #D5D5D5;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 1.2% 2%;
+}
+
+.tasks_list {
+  margin: 2%;
+  max-height: 400px;
+  overflow: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .tasks_list {
+    margin: 0 0 4% 4%;
+    max-height: 524px;
+    overflow: auto;
+  }
+}
+
+.tasks_block {
+  margin: 2%;
+}
+
+@media screen and (min-width: 768px) {
+  .tasks_block {
+    margin: 0 4% 4% 0;
+  }
+}
+
+.task_element {
+  margin: 0;
+}
+
+.task_element img {
+  margin-left: 2%;
+}
+
+@media screen and (min-width: 768px) {
+  .task_element img {
+    margin-left: 42px;
+  }
+}
+
+.task_element p {
+  margin: 5px 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .task_element p {
+    margin: 5px 16px;
+  }
+}
+
+.tasks_border {
+  border: 1px solid #D5D5D5;
+  width: 100%;
+  padding: 0 10px;
+  border-collapse: collapse;
+}
+
+.tasks_block,
+.tasks_list {
+  background-color: #F8F8F8;
+  border: 1px solid #D5D5D5;
+  border-radius: 1px;
+}
+
+.side_menu {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 8px rgba(85, 85, 89, 0.1), 0px 1px 2px rgba(85, 85, 89, 0.05);
+          box-shadow: 0px 4px 8px rgba(85, 85, 89, 0.1), 0px 1px 2px rgba(85, 85, 89, 0.05);
+}
+
+.side_menu_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .side_menu_content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.side_menu_content a {
+  margin: 16px;
+}
+
+.side_menu_content a img {
+  max-width: 100%;
+  min-width: 24px;
+}
+
+.submenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.submenu a {
+  margin: 24px 24px 12px 24px;
+}
+
+input[type=date] {
+  width: 100%;
+  height: 32px;
+  border: 1px solid #D5D5D5;
+  border-radius: 3px;
+  margin: 2%;
+  padding: 6px 8px 6px 16px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: #979797;
+  outline: none;
+}
+
+@media screen and (min-width: 1050px) {
+  input[type=date] {
+    margin: 0 4px 8px 2px;
+  }
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: url("../images/icons/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-size: 17px;
+  color: rgba(0, 0, 0, 0);
+  opacity: 0.8;
+}
+
+input[type="date"]:before {
+  content: attr(placeholder) !important;
+}
+
+input[type="date"]:focus:before,
+input[type="date"]:valid:before {
+  content: "";
+}
+
+input[type="date"]:in-range::-webkit-datetime-edit-year-field,
+input[type="date"]:in-range::-webkit-datetime-edit-month-field,
+input[type="date"]:in-range::-webkit-datetime-edit-day-field,
+input[type="date"]:in-range::-webkit-datetime-edit-text {
+  color: transparent;
+}
+
+.input_text {
+  width: 100%;
+}
+
+input[type=text] {
+  min-width: 137px;
+  width: 100%;
+  height: 32px;
+  border: 1px solid #D5D5D5;
+  border-radius: 3px;
+  margin: 0 4px 8px 0;
+  padding: 6px 16px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #979797;
+  outline: none;
+}
+
+.clear_from_button {
+  position: relative;
+  min-width: 88px;
+  height: 32px;
+  background: #FFFFFF;
+  border: 1px solid #4079BB;
+  border-radius: 3px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #4079BB;
+  outline: none;
+  margin: 16px 8px 0 0;
+}
+
+.search_button {
+  position: relative;
+  min-width: 88px;
+  height: 32px;
+  background: #4079BB;
+  border-radius: 3px;
+  color: #ffffff;
+  outline: none;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  margin: 16px 5% 0 8px;
+}
+
+@media screen and (min-width: 1050px) {
+  .search_button {
+    margin: 16px 0 0 8px;
+  }
+}
+
+input[type=checkbox].css-checkbox {
+  position: absolute;
+  z-index: -1000;
+  left: -1000px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+  padding-left: 29px;
+  height: 24px;
+  display: inline-block;
+  line-height: 24px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  font-size: 24px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+  background-position: 0 -24px;
+}
+
+label.css-label {
+  background-image: url(../images/icons/check_box.svg);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #F8F8F8;
+}
+
+header {
+  margin-bottom: -4px;
+}
+
+h1 {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #272727;
+}
+
+h2 {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+p {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #272727;
+}
+
+.tasks_p {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.alert {
+  color: red;
+}
+/*# sourceMappingURL=style.css.map */

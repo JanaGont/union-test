@@ -1,0 +1,39 @@
+    @import "./variables";
+    .clear_from_button {
+        position: relative;
+        min-width: 88px;
+        height: 32px;
+        background: #FFFFFF;
+        border: 1px solid $buttonColor;
+        border-radius: 3px;
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 14px;
+        color: $buttonColor;
+        outline: none;
+        margin: 16px 8px 0 0;
+    }
+    
+    .search_button {
+        position: relative;
+        min-width: 88px;
+        height: 32px;
+        background: $buttonColor;
+        border-radius: 3px;
+        color: #ffffff;
+        outline: none;
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 14px;
+        margin: 16px 5% 0 8px;
+    }
+    
+    @media screen and (min-width: 1050px) {
+        .search_button {
+            margin: 16px 0 0 8px;
+        }
+    }

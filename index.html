@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task list </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <img src="images/header.svg" alt="header_placeholder" width="100%">
+        </header>
+        <nav class="subheader">
+            <img src="images/customerbar.svg" alt="customerbar_placeholder" width="100%">
+        </nav>
+        <div class="side_menu">
+            <div class="side_menu_content">
+                <a href="#"><img src="images/icons/user.svg" alt="user"></a>
+                <a href="#"><img src="images/icons/hand_coin_line.svg" alt="coin"></a>
+                <a href="#"><img src="images/icons/chart_square.svg" alt="chart"></a>
+                <a href="#"><img src="images/icons/dollar_circle.svg" alt="dollar"></a>
+                <a href="#"><img src="images/icons/bookmark.svg" alt="book"></a>
+                <a href="#"><img src="images/icons/briefcase.svg" alt="briefcase"></a>
+                <a href="#"><img src="images/icons/analyse.svg" alt="analyse"></a>
+                <a href="#"><img src="images/icons/bank.svg" alt="bank"></a>
+            </div>
+        </div>
+        <div class="submenu">
+            <a href="#"><img src="images/icons/down_arrow_alt.svg" alt="arrow"></a>
+            <a href="#"><img src="images/icons/history.svg" alt="history"></a>
+        </div>
+        <div class="tasks">
+            <div class="tasks_list_heading">
+                <h1>Tasks Peeter Klanberg</h1>
+            </div>
+            <div class="search">
+                <div class="container">
+                    <h2>Search tasks</h2>
+                </div>
+                <div class="container">
+                    <div class="select">
+                        <label class="label" for="priority">Priority</label>
+                        <select class="select" name="Priority" id="priority">
+                        <option value=""><p>All priorities</p></option>
+                        <option value=""><p>Other</p></option>
+                        <option value=""><p>Other</p></option>
+                        </select>
+                    </div>
+                </div>
+                <div class="container_task_list">
+                    <div class="select">
+                        <label class="label" for="status">Status</label>
+                        <select name="Status" id="status">
+                            <option value="">Confirmed</option>
+                            <option value=""><p>Other</p></option>
+                            <option value=""><p>Other</p></option>
+                            </select>
+                    </div>
+                    <div class="select">
+                        <label class="label" for="task_type">Task type</label>
+                        <select name="Task_type" id="task_type">
+                            <option value="">All types</option>
+                            <option value=""><p>Other</p></option>
+                            <option value=""><p>Other</p></option>
+                        </select>
+                    </div>
+                    <div class="input_text">
+                        <input type="text" placeholder="Task note ...">
+                    </div>
+                    <div class="container">
+                        <input type="date" placeholder="From">
+                        <input type="date" placeholder="To">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="clear_from_button">Clear from</button>
+                    <button class="search_button">Search</button>
+                </div>
+            </div>
+            <div class="wrapper2">
+                <div class="tasks_list">
+                    <div class="task tasks_border">
+                        <div class="container task_element">
+                            <input type="checkbox" name="checkboxG4" id="checkbox1" class="css-checkbox" /><label for="checkbox1" class="css-label"></label>
+                            <p>ID 546986</p>
+                            <p>Please ask addinfo details</p>
+                        </div>
+                        <div class="container2">
+                            <div class="container2 task_element">
+                                <img src="images/icons/priority1.svg" alt="priority">
+                                <p class="tasks_p">08/03/2020</p>
+                                <p class="tasks_p">created by Külli Sarna on 10/02/2020</p>
+                            </div>
+                            <div class="task_element">
+                                <p>DOC </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tasks_border">
+                        <div class="container task_element">
+                            <input type="checkbox" name="checkboxG4" id="checkbox2" class="css-checkbox" /><label for="checkbox2" class="css-label"></label>
+                            <p>ID 546986</p>
+                            <p class="tasks_p">Here goes task description</p>
+                        </div>
+                        <div class="container2">
+                            <div class=" container2 task_element"><img src="images/icons/priority3.svg" alt="priority">
+                                <p class="tasks_p">18/02–08/03/2020 </p>
+                                <p class="tasks_p">created by Anne Tamm on 10/02/2020</p>
+                            </div>
+                            <div class="task_element">
+                                <p class="tasks_p alert">Alert</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tasks_border">
+                        <div class="container task_element">
+                            <input type="checkbox" name="checkboxG4" id="checkbox3" class="css-checkbox" /><label for="checkbox3" class="css-label"></label>
+                            <p>ID 546986</p>
+                            <p class="tasks_p">Here goes task description</p>
+                        </div>
+                        <div class="container2">
+                            <div class=" container2 task_element"><img src="images/icons/priority2.svg" alt="priority">
+                                <p class="tasks_p">18/02–08/03/2020 </p>
+                                <p class="tasks_p">created by Anne Tamm on 10/02/2020</p>
+                            </div>
+                            <div class="task_element">
+                                <p class="tasks_p alert">Alert</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tasks_border">
+                        <div class="container task_element">
+                            <input type="checkbox" name="checkboxG4" id="checkbox4" class="css-checkbox" /><label for="checkbox4" class="css-label"></label>
+                            <p>ID 546986</p>
+                            <p class="tasks_p">Here goes task description</p>
+                        </div>
+                        <div class="container2">
+                            <div class=" container2 task_element"><img src="images/icons/priority2.svg" alt="priority">
+                                <p class="tasks_p">18/02–08/03/2020 </p>
+                                <p class="tasks_p">created by Anne Tamm on 10/02/2020</p>
+                            </div>
+                            <div class="task_element">
+                                <p class="tasks_p">Alert</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tasks_border">
+                        <div class="container task_element">
+                            <input type="checkbox" name="checkboxG4" id="checkbox5" class="css-checkbox" /><label for="checkbox5" class="css-label"></label>
+                            <p>ID 546986</p>
+                            <p class="tasks_p">Here goes task description</p>
+                        </div>
+                        <div class="container2">
+                            <div class=" container2 task_element"><img src="images/icons/priority1.svg" alt="priority">
+                                <p class="tasks_p">18/02–08/03/2020 </p>
+                                <p class="tasks_p">created by Anne Tamm on 10/02/2020</p>
+                            </div>
+                            <div class="task_element">
+                                <p class="tasks_p">Alert</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tasks_border">
+                        <div class="container task_element">
+                            <input type="checkbox" name="checkboxG4" id="checkbox6" class="css-checkbox" /><label for="checkbox6" class="css-label"></label>
+                            <p>ID 546986</p>
+                            <p class="tasks_p">Here goes task description</p>
+                        </div>
+                        <div class="container2">
+                            <div class=" container2 task_element"><img src="images/icons/priority3.svg" alt="priority">
+                                <p class="tasks_p">18/02–08/03/2020 </p>
+                                <p class="tasks_p">created by Anne Tamm on 10/02/2020</p>
+                            </div>
+                            <div class="task_element">
+                                <p class="tasks_p">Alert</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tasks_border">
+                        <div class="container task_element">
+                            <input type="checkbox" name="checkboxG4" id="checkbox7" class="css-checkbox" /><label for="checkbox7" class="css-label"></label>
+                            <p>ID 546986</p>
+                            <p class="tasks_p">Here goes task description</p>
+                        </div>
+                        <div class="container2">
+                            <div class=" container2 task_element"><img src="images/icons/priority2.svg" alt="priority">
+                                <p class="tasks_p">18/02–08/03/2020 </p>
+                                <p class="tasks_p">created by Anne Tamm on 10/02/2020</p>
+                            </div>
+                            <div class="task_element">
+                                <p class="tasks_p">Alert</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tasks_border">
+                        <div class="container task_element">
+                            <input type="checkbox" name="checkboxG4" id="checkbox8" class="css-checkbox" /><label for="checkbox8" class="css-label"></label>
+                            <p>ID 546986</p>
+                            <p class="tasks_p">Here goes task description</p>
+                        </div>
+                        <div class="container2">
+                            <div class=" container2 task_element"><img src="images/icons/priority1.svg" alt="priority">
+                                <p class="tasks_p">18/02–08/03/2020 </p>
+                                <p class="tasks_p">created by Anne Tamm on 10/02/2020</p>
+                            </div>
+                            <div class="task_element">
+                                <p class="tasks_p">Alert</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tasks_border">
+                        <div class="container task_element">
+                            <input type="checkbox" name="checkboxG4" id="checkbox9" class="css-checkbox" /><label for="checkbox9" class="css-label"></label>
+                            <p>ID 546986</p>
+                            <p class="tasks_p">Here goes task description</p>
+                        </div>
+                        <div class="container2">
+                            <div class=" container2 task_element"><img src="images/icons/priority3.svg" alt="priority">
+                                <p class="tasks_p">18/02–08/03/2020 </p>
+                                <p class="tasks_p">created by Anne Tamm on 10/02/2020</p>
+                            </div>
+                            <div class="task_element">
+                                <p class="tasks_p">Alert</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tasks_border">
+                        <div class="container task_element">
+                            <input type="checkbox" name="checkboxG4" id="checkbox10" class="css-checkbox" /><label for="checkbox10" class="css-label"></label>
+                            <p>ID 546986</p>
+                            <p class="tasks_p">Here goes task description</p>
+                        </div>
+                        <div class="container2">
+                            <div class=" container2 task_element"><img src="images/icons/priority3.svg" alt="priority">
+                                <p class="tasks_p">18/02–08/03/2020 </p>
+                                <p class="tasks_p">created by Anne Tamm on 10/02/2020</p>
+                            </div>
+                            <div class="task_element">
+                                <p class="tasks_p">Alert</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tasks_border">
+                        <div class="container task_element">
+                            <input type="checkbox" name="checkboxG4" id="checkbox11" class="css-checkbox" /><label for="checkbox11" class="css-label"></label>
+                            <p>ID 546986</p>
+                            <p class="tasks_p">Here goes task description</p>
+                        </div>
+                        <div class="container2">
+                            <div class=" container2 task_element"><img src="images/icons/priority3.svg" alt="priority">
+                                <p class="tasks_p">18/02–08/03/2020 </p>
+                                <p class="tasks_p">created by Anne Tamm on 10/02/2020</p>
+                            </div>
+                            <div class="task_element">
+                                <p class="tasks_p">Alert</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tasks_block flex_center">
+                    <div>
+                        <h1>No tasks selected</h1>
+                    </div>
+                    <div>
+                        <h1>Please select task from the task list</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
